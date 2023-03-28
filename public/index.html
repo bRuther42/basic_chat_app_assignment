@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat App</title>
+    <link rel="stylesheet"  href="chat.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app">
+        <!-- JOIN SCREEN ============================================= -->
+        <div class="screen join-screen active">
+            <div class="form">
+                <h2>Join Chatroom</h2>
+                <div class="form-input">
+                    <label>Username:</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="form-input">
+                    <button id="join-user"> > <span class="blink">Connect</span></button>
+                </div>
+            </div>
+        </div>
+        <!-- CHAT SCREEN ============================================= -->
+        <div class="screen chat-screen">
+            <!-- TOP OF CHATSCREEN -->
+            <div class="header">
+                <span>
+                    <div class="logo"></div>
+                    <div class="active-users"><span></span></div>
+                </span>
+                <button id="exit-chat">Disconnect</button>
+            </div>
+            <!-- MESSAGE AREA -->
+            <div class="messages"></div>
+            <!-- TYPE BOX AREA -->
+            <div class="typebox">
+                <span id="time-display"></span>
+                <span>
+                    <input type="text" id="message-input">
+                    <button id="send-message">Send</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI" crossorigin="anonymous"></script>
+    <script src="client.js"></script>
+
+</body>
+</html>

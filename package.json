@@ -1,0 +1,25 @@
+{
+  "name": "lab-nodejsbasics-events-bRuther42",
+  "version": "1.0.0",
+  "description": "<img width=\"150px\" src=\"https://w0244079.github.io/nscc/nscc-jpeg.jpg\" >",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NSCC-Winter2023-APPD5015/lab-nodejsbasics-events-bRuther42.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NSCC-Winter2023-APPD5015/lab-nodejsbasics-events-bRuther42/issues"
+  },
+  "homepage": "https://github.com/NSCC-Winter2023-APPD5015/lab-nodejsbasics-events-bRuther42#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.4"
+  }
+}
+
